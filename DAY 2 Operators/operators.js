@@ -139,6 +139,174 @@
     console.log(less<= less1); // less than or Equal // True
 
     //💡 Always prefer === and !== — they prevent type confusion.
+
+    // 4. Logical Operator
+     // Used to combine or invert conditions.(invert means = மாற்று , matra payanpadugirathu)
+
+     // && - AND Operator
+
+     let age = 20;
+
+     if (age > 18 && age < 60) {
+        console.log("Eligible");
+        
+     } // and operators => True if both true , must the both condition true or false.
+
+     // example of &&
+
+     let Uname ="abarnavijay"
+     let password = 12345;
+
+     if (Uname && password) {
+        console.log("login sucess");
+     } else {
+        console.log("Enter all details");
+
+        // 🧠 Both username and password must be truthy (not empty).
+        // If one is missing → condition fails.
+    }
+
+    let No = 50;
+
+    if (No >=1 && No <=100) {
+        console.log("num is within the range");
+        
+        
+    } else {
+        console.log("outof the range");
+
+        // ✅ Output → "Number is within range"
+        // Logic: Both must be true → number ≥ 1 and ≤ 100.
+        
+    }
+        let isOnline = true;
+        let hasCamera = true;
+        let hasMic = false;
+
+        if (isOnline && hasCamera && hasMic) {
+            console.log("ready for the video call");
+            
+        } else {
+            console.log("setup is incompleted");
+
+            // 🧠 One condition (hasMic) is false → whole condition = false.
+            // Output → "Setup incomplete."
+        }  
+        
+
+     // ||- OR operator
+
+        // age < 18  → true
+        // age > 60 → false
+        // true || false → true
+        // → Output: "Not eligible"
+
+     let _age = 17;
+
+     if (_age < 18 || _age > 60) {
+        console.log("not eligible");
+        
+     } else {
+        console.log("Eligible too");
+        
+       //  condition1 || condition2
+   // 🟢 If any one of them is true → result = true
+   // 🔴 If both are false → result = false
+     }
+
+     // Logic senario
+
+     let Username = "abarna"
+     let Email = ''
+     let Password = 1234;
+
+     if ((Username||Email) && Password) {
+        console.log("login successfully");
+        
+        
+     } else {
+        console.log("login Failed");
+
+    //         🧠 Here:
+    // username || email → "Abarna" (truthy, because username is not empty)
+    // password → truthy
+    // ✅ Output → "Login success!"
+
+    // Logical OR is useful when you allow either one field to be valid (username or email).
+        
+     }
+
+     // example 
+
+     let userName = ""
+     let defaultName = "guest"
+
+     let displayName = userName || defaultName;
+     console.log(displayName);
+
+    //  🟢 Output: "Guest"
+    // If userName is empty (falsy), JS takes defaultName.
+    // ✅ So OR helps give fallback / default values.
+     
+    // example 
+
+    let color = "red";
+
+    if (color === "red" || color === "blue"|| color === "orange") {
+
+        console.log("color is valid");
+        
+    } else {
+        console.log("invalid color");
+        
+        // 🟢 Output: "Color is valid!"
+        // Here, any one true → full condition true.
+    }
+        
+   // nOT ! operator
+
+    // !condition
+    // It simply means →
+    // ✅ If condition is true → becomes false
+    // ❌ If condition is false → becomes true
+
+    let isRaining = false;
+
+    if (!isRaining) {
+    console.log("You can go outside!");
+    } else {
+    console.log("Take an umbrella!");
+
+    //     🟢 !isRaining = !false → true
+    // ✅ Output: "You can go outside!"
+    }
+        let username = "";
+
+    if (!username) {
+    console.log("Username cannot be empty");
+
+    // 🧠 username is an empty string → falsy value
+    // !username → true
+    // ✅ Output: "Username cannot be empty"
+    // So ! helps us check if something is missing or empty.
+    }
+
+    // 💬 Example 4: Using double NOT (!!)
+    let name = "Abarna";
+    console.log(!!name); // true
+
+    let empty = "";
+    console.log(!!empty); // false
+    
+    // 🧠 Double NOT (!!) converts any value into its Boolean form:
+    // !!"Abarna" → true
+    // !!"" → false
+    // ✅ Useful for checking if a value exists or not.
+
+
+
+
+
     
     
 
