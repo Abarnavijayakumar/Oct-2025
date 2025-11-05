@@ -297,11 +297,18 @@
 
     let empty = "";
     console.log(!!empty); // false
-    
+
     // 🧠 Double NOT (!!) converts any value into its Boolean form:
     // !!"Abarna" → true
     // !!"" → false
     // ✅ Useful for checking if a value exists or not.
+
+    // 5 . String Operator
+
+    // String operators are used to join (concatenate) or compare text (string) values.
+    // There are mainly two types:
+    // Concatenation Operator (+ and +=)
+    // Comparison Operators (==, ===, etc.)
 
 
 
