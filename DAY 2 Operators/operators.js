@@ -310,6 +310,25 @@
     // Concatenation Operator (+ and +=)
     // Comparison Operators (==, ===, etc.)
 
+    //Example 1: Simple concatenation
+
+    let firstname = "Abarna"
+    let lastname = "vijayakumar"
+
+    let fullname = firstname + " " + lastname;
+    console.log(fullname);
+
+    // ✅ Example 2: Adding numbers and strings
+
+    let AGE = 21;
+    let message = "I am " + AGE + " years old ";
+    console.log(message);
+
+    // 🧠 Here, + converts the number 22 into a string automatically (called type coercion).
+    
+    
+
+
 
 
 
