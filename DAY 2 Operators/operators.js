@@ -325,6 +325,53 @@
     console.log(message);
 
     // 🧠 Here, + converts the number 22 into a string automatically (called type coercion).
+
+    // 2. Concatenation Assignment Operator (+=)
+
+    let greet = "Hello"
+    greet += " abarna"
+     console.log(greet); // Hello Abarna
+
+     // 3. Combining Strings Dynamically
+
+     let product = "Laptop";
+     let price = 5000;
+
+     let info = "The " + product + " price is " + price ;
+     console.log(info); // The Laptop price is 5000
+
+     //4. Template Literals (Modern String Operator)
+
+     //In modern JS (ES6+), we prefer template literals (using backticks `) instead of +.
+
+     let Name = "abarna"
+     let course = "MERN Stack"
+
+     console.log(`Hi ${Name} , Welcome to the ${course} Course!`); // Hi abarna , Welcome to the MERN Stack Course!
+        // ✅ Easier to read
+        // ✅ Can include variables and line breaks easily
+
+     // 5. 5. String Comparison (Logical Use)
+     
+    //  We can compare two strings using comparison operators.
+
+    let A = "hello"
+    let B = "Hello"
+
+    console.log(A == B); // false 
+    console.log(A === B); // false
+    //== / === Compare strings "hi" === "hi" true
+    // 🧠 JS compares strings character by character using Unicode values (so H ≠ h).
+
+
+
+    
+    
+     
+     
+
+
+     
     
     
 
