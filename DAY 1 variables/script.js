@@ -82,7 +82,7 @@ console.log(Num.toString(16)); // "a"     → hexadecimal
 //7. Common Mistakes
 //Don’t use it on null or undefined, it will throw an error:
 let x = null;
-console.log(x.toString()); // ❌ TypeError
+//  console.log(x.toString()); // ❌ TypeError
 
 // ✅ Instead, use the global String() function:
 
@@ -96,6 +96,17 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 
 let myList = fruits.toString();
 console.log(myList);
+
+// 1️⃣ Coffee Shop Billing
+// A coffee costs ₹120.
+// You bought 2 cups
+
+let coffee = 120;
+let quantity = 2;
+let total = coffee * quantity;
+console.log(total);
+
+
 
 
 

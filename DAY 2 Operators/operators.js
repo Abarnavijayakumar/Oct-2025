@@ -363,6 +363,51 @@
     //== / === Compare strings "hi" === "hi" true
     // 🧠 JS compares strings character by character using Unicode values (so H ≠ h).
 
+    // 6.Ternary Operator
+   
+    // Short form of if-else.
+    //=> The ternary operator is a shortcut for if...else statements — used to make code short and simple.
+     
+    // syntax 
+    //condition ? expressionIfTrue : expressionIfFalse
+    //     👉 It means:
+    // “If the condition is true, do the first part; otherwise, do the second part.”
+
+    // Example
+
+    let $age = 18;
+    let Msg = ($age >= 18) ? "you can vote" : "you cannot vote"
+    console.log(Msg);
+
+    let num = 7
+    let result = (num % 2 === 0) ? "Even Number" : "Odd Number"
+    console.log(result);
+
+    let isLoggedIn = true;
+    let display = isLoggedIn ? "Welcome back, Abarna!" : "Please log in."
+    console.log(display);
+    
+    let Marks = 85;
+    let Grade = (Marks >= 90) ? "A" :
+                (Marks >= 85) ? "B" :
+                (Marks >= 50) ? "c" : "fail"
+                console.log(Grade);
+
+    //Example 5: Real-World UI Example
+    // Imagine showing online/offline status:
+
+    let IsOnline = true;
+    let Status = isOnline ? "🟢 Online" : "🔴 Offline";
+    console.log(Status);
+    
+
+                
+
+    
+    
+
+
+
 
 
     
