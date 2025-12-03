@@ -54,6 +54,27 @@ Early returns
 Validation helper methods
 Design patterns
 Because cleaner code = easier to maintain. **/
+
+//If user is logged in → then check if user is admin.
+let isLoggedIn = true;
+let role = "admin";
+
+if (isLoggedIn) {
+  if (role === "admin") {
+    console.log("wlecome Admin");
+  }
+  else{
+    console.log("welcome User");
+  }
+} else{
+  console.log("please login First");
+  
+}
+    
+
+    
+    
+  
      
         
         
