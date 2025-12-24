@@ -22,6 +22,12 @@ decrementBtn.addEventListener("click",function () {
          The counter will decrease only if the number is above 0.
          If the number is already 0, it will NOT go into negative numbers.**/
         }
+        if (count > 0) {
+            countValue.style.color = "green";
+        } else {
+            countValue.style.color = "red";
+            
+        }
     })
 
         
